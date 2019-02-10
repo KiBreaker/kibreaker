@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <div id="login_div" class="main-div"> 
+    <h3>Firebase Web login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+    <input type="text" placeholder="Location..." id="location_field" />
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+ <div id="user_div" class="loggedin-div"> 
+    <h3>Loading</h3>
+    <p id="user_para">If no response click below...</p>
+    <button onclick="logout()">Go to login page</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyAzQHw-pGeje1quzJgx9yNk4FbjOcfy6s4",
+    authDomain: "hope-3088f.firebaseapp.com",
+    databaseURL: "https://hope-3088f.firebaseio.com",
+    projectId: "hope-3088f",
+    storageBucket: "hope-3088f.appspot.com",
+    messagingSenderId: "807840091570"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
